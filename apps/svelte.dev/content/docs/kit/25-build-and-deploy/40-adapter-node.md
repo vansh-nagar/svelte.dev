@@ -9,7 +9,7 @@ A quick way to get started is by deploying a project using SvelteKit's [official
 
 ## Usage
 
-Run [`npx sv add sveltekit-adapter="adapter:node"`](/docs/cli/sveltekit-adapter), or install with `npm i -D @sveltejs/adapter-node` and add the adapter to your `vite.config.js`:
+Install with `npm i -D @sveltejs/adapter-node`, then add the adapter to your `vite.config.js`:
 
 ```js
 // @errors: 2307 2554
@@ -108,7 +108,7 @@ PROTOCOL_HEADER=x-forwarded-proto HOST_HEADER=x-forwarded-host node build
 
 If `adapter-node` can't correctly determine the URL of your deployment, you may experience this error when using [form actions](form-actions):
 
-> [!NOTE] Cross-site POST form submissions are forbidden
+> Cross-site POST form submissions are forbidden
 
 ### `ADDRESS_HEADER` and `XFF_DEPTH`
 
